@@ -111,7 +111,8 @@ class CanaisFav:
 # caso nao, nada acontece.
 # caso sim, verifica se a formatacao esta correta e as respostas sao enviadas para o usuario
 # Um (1) é acrescido ao identificador para o bot apagar a mensagem recebida anteriormente
-#
+# e depois é chamada as funcoes que envia a requisicao para obter a grade de programacao
+# e é chamada as funcoes que obtem informacoes de cada canal
 
 if resposta == []:
     pass
@@ -123,12 +124,24 @@ else:
         identificador = identificador + 1
         print(identificador)
         bot.getUpdates(offset=identificador)
+        TV.MostraProgramas.Requisicao()
         CanaisFav.Globo()
+        CanaisFav.Globosat()
+        CanaisFav.Globonews()
+        CanaisFav.Multishow()
+        CanaisFav.Mtv()
+        CanaisFav.FoodNetwork()
+        CanaisFav.AnimalPlanet()
+        CanaisFav.TLC()
+        CanaisFav.DiscoveryHEM()
+        CanaisFav.DiscoverySCI()
+        CanaisFav.NatGeo()
+        CanaisFav.Discovery()
+        CanaisFav.History()
     else:
         pass
-
-# CanaisFav.Globo()
 '''
+# CanaisFav.Globo()
 CanaisFav.Globosat()
 CanaisFav.Globonews()
 CanaisFav.Multishow()
