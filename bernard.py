@@ -10,13 +10,6 @@ bot = telepot.Bot(tokenapi)
 resposta = bot.getUpdates()
 print(resposta)
 
-#identificador = resposta[0]['update_id']
-#print(identificador)
-
-#Pega Offset atual
-arqoff = open('offset.txt', 'r')
-offsetvalor = arqoff.read()
-print(offsetvalor)
 
 # bot.sendMessage(21457221, 'opa')
 class CanaisFav:
@@ -111,7 +104,30 @@ class CanaisFav:
         bot.sendMessage(21457221, mensagem)
         arquivo.close()
 
-#CanaisFav.Globo()
+# executa todos comandos dos canais favoritos
+
+
+# verifica o bot recebeu alguma mensagem
+# caso nao, nada acontece.
+# caso sim, verifica se a formatacao esta correta e as respostas sao enviadas para o usuario
+# Um (1) é acrescido ao identificador para o bot apagar a mensagem recebida anteriormente
+#
+
+if resposta == []:
+    pass
+else:
+    print("teste else")
+    identificador = resposta[0]['update_id']
+    print(identificador)
+    if type(identificador) == int:
+        identificador = identificador + 1
+        print(identificador)
+        bot.getUpdates(offset=identificador)
+        CanaisFav.Globo()
+    else:
+        pass
+
+# CanaisFav.Globo()
 '''
 CanaisFav.Globosat()
 CanaisFav.Globonews()
