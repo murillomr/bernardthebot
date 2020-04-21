@@ -9,9 +9,9 @@ arq.close()
 bot = telepot.Bot(tokenapi)
 resposta = bot.getUpdates()
 print(resposta)
-
-
 # bot.sendMessage(21457221, 'opa')
+
+
 class CanaisFav:
     def Globo():
         TV.MostraProgramas.CanalGlobo()
@@ -104,7 +104,7 @@ class CanaisFav:
         bot.sendMessage(21457221, mensagem)
         arquivo.close()
 
-# executa todos comandos dos canais favoritos
+# funcoes para executar todos comandos dos canais favoritos
 
 
 # verifica o bot recebeu alguma mensagem
