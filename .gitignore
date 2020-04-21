@@ -1,0 +1,9 @@
+# Default ignored files
+/workspace.xml
+*.xml
+venv
+.idea
+__pycache__
+thebot
+temp.txt
+*.txt
