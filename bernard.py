@@ -8,7 +8,7 @@ arq.close()
 
 bot = telepot.Bot(tokenapi)
 resposta = bot.getUpdates()
-print(resposta)
+#print(resposta)
 # bot.sendMessage(21457221, 'opa')
 
 
@@ -117,12 +117,12 @@ class CanaisFav:
 if resposta == []:
     pass
 else:
-    print("teste else")
+    #print("teste else")
     identificador = resposta[0]['update_id']
-    print(identificador)
+    #print(identificador)
     if type(identificador) == int:
         identificador = identificador + 1
-        print(identificador)
+        #print(identificador)
         bot.getUpdates(offset=identificador)
         TV.MostraProgramas.Requisicao()
         CanaisFav.Globo()

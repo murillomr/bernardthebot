@@ -18,10 +18,10 @@ class MostraProgramas:
         proxies = {"http": "127.0.0.1:8080", "https": "127.0.0.1:8080"}
 
         # com proxy
-        resposta = requests.get(url, proxies=proxies, headers=headers, verify=False)
+        #resposta = requests.get(url, proxies=proxies, headers=headers, verify=False)
 
         # sem proxy
-        # resposta = requests.get(url, headers=headers)
+        resposta = requests.get(url, headers=headers)
 
         # print(resposta.content)
 
@@ -43,7 +43,7 @@ class MostraProgramas:
         # print(iteme)
         # entra dentro da lista DOCS
         itemf = iteme[0]['docs']
-        print(itemf)
+        #print(itemf)
 
     def CanalGlobo():
         print("####GLOBO###")
