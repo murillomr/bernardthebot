@@ -110,9 +110,9 @@ class CanaisFav:
 # verifica o bot recebeu alguma mensagem
 # caso nao, nada acontece.
 # caso sim, verifica se a formatacao esta correta e as respostas sao enviadas para o usuario
-# Um (1) é acrescido ao identificador para o bot apagar a mensagem recebida anteriormente
-# e depois é chamada as funcoes que envia a requisicao para obter a grade de programacao
-# e é chamada as funcoes que obtem informacoes de cada canal
+# Um (1) eh acrescido ao identificador para o bot apagar a mensagem recebida anteriormente
+# e depois eh chamada as funcoes que envia a requisicao para obter a grade de programacao
+# e eh chamada as funcoes que obtem informacoes de cada canal
 
 if resposta == []:
     pass
