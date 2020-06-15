@@ -2,11 +2,12 @@ import requests
 import json
 import TV_montaURL
 
+
 # lacos criados para buscar os canais
 class MostraProgramas:
 
-#    def __init__(self, itemf):
-#        self.itemf = itemf
+    #    def __init__(self, itemf):
+    #        self.itemf = itemf
 
     def Requisicao():
         global itemf
@@ -18,7 +19,7 @@ class MostraProgramas:
         proxies = {"http": "127.0.0.1:8080", "https": "127.0.0.1:8080"}
 
         # com proxy
-        #resposta = requests.get(url, proxies=proxies, headers=headers, verify=False)
+        # resposta = requests.get(url, proxies=proxies, headers=headers, verify=False)
 
         # sem proxy
         resposta = requests.get(url, headers=headers)
@@ -43,7 +44,7 @@ class MostraProgramas:
         # print(iteme)
         # entra dentro da lista DOCS
         itemf = iteme[0]['docs']
-        #print(itemf)
+        # print(itemf)
 
     def CanalGlobo():
         print("####GLOBO###")
@@ -59,7 +60,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "435":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -78,7 +79,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "922":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -97,7 +98,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "432":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -116,7 +117,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "450":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -135,7 +136,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "456":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -154,7 +155,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "952":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -173,7 +174,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "407":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -192,7 +193,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "1512":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -211,7 +212,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "438":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -230,7 +231,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "423":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -249,7 +250,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "472":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -268,7 +269,7 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "421":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")
@@ -287,7 +288,26 @@ class MostraProgramas:
             fim = n['dh_fim']
             fim = fim[:-1][11:]
             if id == "2257":
-                #print("{0}: {1} - {2}".format(programa, comeco, fim))
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
+                canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
+                novo = open('temp.txt', 'a')
+                novo.write(canalprog + "\n")
+                novo.close()
+
+    def CanalDiscWorld():
+        print("#### Discovery World ###")
+        novo = open('temp.txt', 'w')
+        novo.write("### Discovery World ###" + "\n")
+        novo.close()
+        for n in itemf:
+            id = n['id_canal']
+            programa = n['titulo']
+            comeco = n['dh_inicio']
+            comeco = comeco[:-1][11:]
+            fim = n['dh_fim']
+            fim = fim[:-1][11:]
+            if id == "1144":
+                # print("{0}: {1} - {2}".format(programa, comeco, fim))
                 canalprog = "{0}: {1} - {2}".format(programa, comeco, fim)
                 novo = open('temp.txt', 'a')
                 novo.write(canalprog + "\n")

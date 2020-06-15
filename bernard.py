@@ -104,6 +104,13 @@ class CanaisFav:
         bot.sendMessage(21457221, mensagem)
         arquivo.close()
 
+    def DiscWorld():
+        TV.MostraProgramas.CanalDiscWorld()
+        arquivo = open('temp.txt', 'r')
+        mensagem = arquivo.read()
+        bot.sendMessage(21457221, mensagem)
+        arquivo.close()
+
 # funcoes para executar todos comandos dos canais favoritos
 
 
@@ -138,6 +145,7 @@ else:
         CanaisFav.NatGeo()
         CanaisFav.Discovery()
         CanaisFav.History()
+        CanaisFav.DiscWorld()
     else:
         pass
 '''
