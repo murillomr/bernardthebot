@@ -3,13 +3,11 @@ import TV
 
 arq = open('thebot', 'r')
 tokenapi = arq.read()
-# print(tokenapi)
 arq.close()
 
 bot = telepot.Bot(tokenapi)
 resposta = bot.getUpdates()
-#print(resposta)
-# bot.sendMessage(21457221, 'opa')
+
 
 
 class CanaisFav:
@@ -321,18 +319,4 @@ else:
             CanaisSport.EspnBR()
     else:
         pass
-'''
-# CanaisFav.Globo()
-CanaisFav.Globosat()
-CanaisFav.Globonews()
-CanaisFav.Multishow()
-CanaisFav.Mtv()
-CanaisFav.FoodNetwork()
-CanaisFav.AnimalPlanet()
-CanaisFav.TLC()
-CanaisFav.DiscoveryHEM()
-CanaisFav.DiscoverySCI()
-CanaisFav.NatGeo()
-CanaisFav.Discovery()
-CanaisFav.History()
-'''
+
