@@ -104,6 +104,3 @@ class Minutoutc:
             # return para possibilitar o armazenamento da saida em uma variavel de outro arquivo
             return minutov
 
-#executar classes e funcoes:
-#Hora.Obterhora(0)
-#Horautc.Obterhorautc(0)
