@@ -8,8 +8,6 @@ class Mes:
         self.mesv = mesv
 
     def Obtermes(self):
-        # obter hora e data
-        #print(datetime.now())
         agoram = datetime.now()
         # pega somente mes
         mes = agoram.month
@@ -22,8 +20,6 @@ class Mes:
             return mesv
         else:
             mesv = str(mes)
-            #print(mesv)
-            # return para possibilitar o armazenamento da saida em uma variavel de outro arquivo
             return mesv
 
 class Mesutc:
@@ -84,8 +80,6 @@ class Diautc:
         self.diav = diav
 
     def Obterdia(self):
-        # obter hora e data
-        #print(datetime.now())
         agoram = datetime.utcnow()
         # pega somente mes
         dia = agoram.day
