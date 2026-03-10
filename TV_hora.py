@@ -8,24 +8,15 @@ class Hora:
         self.horav = horav
 
     def Obterhora(self):
-        # obter hora e data
-        #print(datetime.now())
         agora = datetime.now()
-        # pega somente hora
         hora = agora.hour
-        #voltando uma hora para ter uma maior abrangencia de programacao
         hora = hora - 1
-        #  transforma a variavel "hora" de int (inteiro) para str (string) para utilizar o len() - verificacao de tamanho da string
         verificacao = len(str(hora))
         if verificacao == 1:
             horav = "0" + str(hora)
-            #print(horav)
-            # return para possibilitar o armazenamento da saida em uma variavel de outro arquivo
             return horav
         else:
             horav = str(hora)
-            #print(horav)
-            # return para possibilitar o armazenamento da saida em uma variavel de outro arquivo
             return horav
 
 class Horautc:
@@ -35,8 +26,6 @@ class Horautc:
         self.verificautc = verificautc
         self.horautcv = horautcv
     def Obterhorautc(self):
-        # obter hora e data utc - tres horas a frente
-        #print(datetime.utcnow())
         agorautc = datetime.utcnow()
         # pega somente hora
         horautc = agorautc.hour
