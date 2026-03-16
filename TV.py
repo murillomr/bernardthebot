@@ -6,8 +6,6 @@ import TV_montaURL
 # lacos criados para buscar os canais
 class MostraProgramas:
 
-    #    def __init__(self, itemf):
-    #        self.itemf = itemf
     @classmethod
     def Requisicao(cls):
         global itemf
